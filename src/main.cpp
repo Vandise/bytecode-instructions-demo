@@ -33,7 +33,7 @@ push_integer()
   //  0x0104
   //    0x04
   //
-  uint8_t intSize = (opCode >> 8);
+  uint8_t intSize = (MASK(0xFF00) >> 8);
 
   std::cout << "Integer Byte Size: " << (int)(intSize) << std::endl;
 
